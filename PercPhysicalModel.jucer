@@ -2,11 +2,15 @@
 
 <JUCERPROJECT id="TX0HfV" name="PercPhysicalModel" projectType="guiapp" version="1.0.0"
               bundleIdentifier="com.yourcompany.PercPhysicalModel" includeBinaryInAppConfig="1"
-              jucerVersion="4.3.0" companyName="QJ">
+              jucerVersion="5.1.1" companyName="QJ" displaySplashScreen="1"
+              reportAppUsage="1" splashScreenColour="Dark" cppLanguageStandard="11">
   <MAINGROUP id="V3QXCW" name="PercPhysicalModel">
     <GROUP id="{F1340B1B-9DC0-2580-12AF-8A7673606B02}" name="Source">
       <FILE id="XcIZhs" name="MainComponent.cpp" compile="1" resource="0"
             file="Source/MainComponent.cpp"/>
+      <FILE id="jLRur8" name="AudioSettings.h" compile="0" resource="0" file="Source/AudioSettings.h"/>
+      <FILE id="nBoUkb" name="PhysicalModel.h" compile="0" resource="0" file="Source/PhysicalModel.h"/>
+      <FILE id="E2RN8a" name="Synth.h" compile="0" resource="0" file="Source/Synth.h"/>
       <FILE id="aKTrwy" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
     </GROUP>
   </MAINGROUP>
@@ -17,46 +21,22 @@
         <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="PercPhysicalModel"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
-        <MODULEPATH id="juce_core" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_events" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_graphics" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_data_structures" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_gui_basics" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_gui_extra" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_cryptography" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_video" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_opengl" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_basics" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_devices" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_formats" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_processors" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_utils" path="../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../SDKs &amp; Libraries/JUCE/modules"/>
       </MODULEPATHS>
     </XCODE_MAC>
-    <VS2015 targetFolder="Builds/VisualStudio2015">
-      <CONFIGURATIONS>
-        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
-                       isDebug="1" optimisation="1" targetName="PercPhysicalModel"/>
-        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
-                       isDebug="0" optimisation="3" targetName="PercPhysicalModel"/>
-      </CONFIGURATIONS>
-      <MODULEPATHS>
-        <MODULEPATH id="juce_video" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_opengl" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_gui_extra" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_gui_basics" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_graphics" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_events" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_data_structures" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_cryptography" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_core" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_utils" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_processors" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_formats" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_devices" path="../../../Applications/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_basics" path="../../../Applications/JUCE/modules"/>
-      </MODULEPATHS>
-    </VS2015>
   </EXPORTFORMATS>
   <MODULES>
     <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
